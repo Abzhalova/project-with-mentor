@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h2 class="header__logo">13-Group</h2>
+      <nav class="header__nav">
+        <ul class="header__items">
+          <li class="header__item"><a href="./index.html">Главная</a></li>
+          <li class="header__item"><a href="./create.html">Создать</a></li>
+          <li class="header__item"><a href="./product.index.html">Продукты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="create__title">Редактирование товара</h1>
+   <form id="form"> 
+      <input type="text" id="title" placeholder="Title" required class="form__inp"/>
+      <input type="number" id="price" placeholder="Price" required class="form__inp"/>
+      <input type="text" id="img" placeholder="img" required class="form__inp"/>
+      <input type="text" id="description" placeholder="Description" required class="form__inp"/>
+      <button class="form__btn" type="submit">Добавить</button>
+   </form>
+    <footer class="footer">
+        <h2 class="footer__logo">13-Group</h2>
+    </footer>
+ 
+    <script src="./edit.js"></script>
+  </body>
+</html>
