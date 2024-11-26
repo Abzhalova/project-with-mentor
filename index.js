@@ -19,11 +19,23 @@ function displayProducts(products) {
            <h2 class='product__title'>${product.title}</h2>
            <p class='product__desc'>${product.description}</p>
            <p class='product__price'><span class='product__price_text'>${product.price}</span></p>
+           <div class="btns">
            <a href='edit.html?id=${product.id}' class="edit__link">Редактирование</a>
+           <button class="delete__btn" onclick="deleteProduct(${product.id})">Delete</button>
+           </div>
          </div>
       `)
    
 }
+
+
+async function deleteProduct(id){
+   await fetch (`${API}/${id}`,{
+      method: "DELETE"
+   })
+   fetchProduct()
+}
+
 
 fetchProduct()
 

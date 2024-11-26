@@ -157,18 +157,46 @@ body{
 
 
 
+
+/**********************/
+/*****Edit Element*****/
+/**********************/
+
 .edit__link{
     width: 140px;
     height: 30px;
     text-decoration: none;
     color: white;
-    margin-left: 15px;
     background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     border-radius: 30px;
     font-family: "Poppins", sans-serif;
     padding: 10px 20px;
+}
+
+
+
+
+/**********************/
+/***Delete Element*****/
+/**********************/
+
+.btns{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.delete__btn{
+   width: 130px;
+   height: 30px;
+   border: none;
+   border-radius: 30px;
+   background-color: red;
+   color: white;
+   font-family: "Poppins", sans-serif;
+   cursor: pointer;
 }
