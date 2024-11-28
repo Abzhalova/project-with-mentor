@@ -24,7 +24,7 @@ function displayProducts(products) {
            <button class="delete__btn" onclick="deleteProduct(${product.id})">Delete</button>
            </div>
          </div>
-      `)
+      `).join('')
    
 }
 
@@ -36,8 +36,24 @@ async function deleteProduct(id){
    fetchProduct()
 }
 
+fetchProduct() 
 
-fetchProduct()
+async function searchProduct(event){
+   const searchQuery = event.target.value.toLowerCase()
+  
+   const  response = await fetch(API)
+   const products = await response.json()
+
+   const filteredProducts = products.filter(product => product.title.toLowerCase().
+   includes(searchQuery))
+
+   displayProducts(filteredProducts)
+}
+
+
+
+document.getElementById('search').addEventListener('input',searchProduct )
+
 
 
 
@@ -67,4 +83,7 @@ async function addProduct(){
    })
    fetchProduct()
 }
+
+fetchProduct()
+
 

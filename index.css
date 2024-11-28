@@ -200,3 +200,19 @@ body{
    font-family: "Poppins", sans-serif;
    cursor: pointer;
 }
+
+
+/**********************/
+/***    SEARCH    *****/
+/**********************/
+
+#search{
+    width: 400px;
+    height: 35px;
+    margin:  20px 0 20px 30px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid rgb(0, 162, 255);
+    outline: none;
+    
+}
